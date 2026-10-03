@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-04",
+  "timezone": "Asia/Shanghai",
+  "execution_mode": "Codex directly read local SKILL.md and task-specific references, generated concrete artifacts, then reconciled shared contracts. Not an installed auto-trigger test.",
+  "scenario": "回声：用户反馈审核与导出",
+  "business_input_kind": "8 synthetic feedback records, no real customer data",
+  "classifier_mode": "preset category suggestions for UI demonstration; not a model benchmark",
+  "skills": [
+    {
+      "skill": "pm-prompt-design",
+      "source_sha256": "e495d0dbd8545809b281c614be8efdb3f73015aa063afb85a080bc9b09f08587",
+      "file": "SKILL.md"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "assets/01-prompt.png",
+      "source": "rendered/01-prompt.html",
+      "width": 1280,
+      "height": 2573,
+      "capture": "ego-browser Chromium screenshot, unretouched",
+      "image_sha256": "d15d97c045163ec66093b75efcd17d55311de9fc3421fc67187205c9ea2abec7",
+      "source_sha256": "a4f2a5a5fb537246543ba0c3544ef4d8aa0c2d4343831768b72c9476e93bc4c0"
+    }
+  ],
+  "example": {
+    "file": "examples/01-提示词设计.md",
+    "sha256": "653c9d70688c5b2dd1685a62fcf3c4177cdbd88a3f2248355d6bcc23647d1d45"
+  },
+  "verification": "本例由 Codex 读取本 Skill 与相关参考后实际生成，截图来自文档排版页面。输入为合成反馈；尚未将该提示词接入分类模型服务，也没有真实准确率、模型间对比或效果提升数据。验收用例属于评测设计，不应描述为全部已经实测通过。",
+  "not_claimed": [
+    "global skill auto-discovery",
+    "production deployment",
+    "real customer interviews",
+    "classifier accuracy benchmark",
+    "commercial efficiency improvement"
+  ]
+}
